@@ -64,7 +64,7 @@ h2 {
   color: white;
   cursor: pointer;
 }
-p {
+#choosing-first-title {
   border: 1px solid black;
   background-color: pink;
 }
@@ -97,9 +97,12 @@ p {
   box-shadow: 0.3em 0.3em 0.3em #777777;
 }
 #scoreBoard{
-  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin: auto;
 }
-
-th{
-  border-bottom: 2px solid black;
+p{
+  border: 1px solid black;
+  background-color: pink;
 }

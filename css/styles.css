@@ -82,7 +82,7 @@ p {
   cursor: pointer;
   box-shadow: 0.3em 0.3em 0.3em #777777;
 }
-#y-first {
+#o-first {
   margin-left: auto;
   margin-right: auto;
   width: 10%;
@@ -90,7 +90,7 @@ p {
   margin bottom: 10%;
   background-color: pink;
 }
-#y-first:hover {
+#o-first:hover {
   background-color: #A4E8CD;
   color: black;
   cursor: pointer;

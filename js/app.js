@@ -14,7 +14,7 @@ const winningConditions = [
 ///////////////////// APP STATE (VARIABLES) /////////////////////////
 
 let board;
-let turn;
+let turn = "Choose"
 let win;
 let chosen;
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
@@ -27,18 +27,26 @@ const message = document.querySelector("h2");
 window.onload = init;
 document.getElementById("board").onclick = takeTurn;
 document.getElementById("reset-button").onclick = init;
-
+document.getElementById("x-first").onclick = xTurn;
+document.getElementById("o-first").onclick = oTurn;
 
 ///////////////////// FUNCTIONS /////////////////////////////////////
 
 function init() {
   board = ["", "", "", "", "", "", "", "", ""];
-  turn = "X";
+  turn = turn;
   win = null;
 
   render();
 }
-
+ function xTurn(){
+   init();
+   turn = "X";
+ }
+ function oTurn(){
+   init();
+   turn = "O";
+ }
 function render() {
   board.forEach(function(mark, index) {
     squares[index].textContent = mark;

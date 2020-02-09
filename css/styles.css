@@ -96,3 +96,10 @@ p {
   cursor: pointer;
   box-shadow: 0.3em 0.3em 0.3em #777777;
 }
+#scoreBoard{
+  border: 2px solid black;
+}
+
+th{
+  border-bottom: 2px solid black;
+}

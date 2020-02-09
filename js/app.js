@@ -17,6 +17,8 @@ let board;
 let turn;
 let win;
 let chosen;
+let xWins = 0;
+let yWins= 0;
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 
 const squares = Array.from(document.querySelectorAll("#board div"));
@@ -87,4 +89,9 @@ function getWinner() {
   });
 
   return winner ? winner : board.includes("") ? null : "T";
+  if winner === "X" {
+    xWin++;
+  } if else (winnner === "Y"){
+    yWin++;
+  }
 }

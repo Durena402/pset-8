@@ -33,7 +33,7 @@ document.getElementById("reset-button").onclick = init;
 
 function init() {
   board = ["", "", "", "", "", "", "", "", ""];
-  turn = "choose turn";
+  turn = "X";
   win = null;
 
   render();

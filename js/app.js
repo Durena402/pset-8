@@ -14,7 +14,7 @@ const winningConditions = [
 ///////////////////// APP STATE (VARIABLES) /////////////////////////
 
 let board;
-let turn = "Choose"
+let turn;
 let win;
 let chosen;
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
@@ -34,17 +34,19 @@ document.getElementById("o-first").onclick = oTurn;
 
 function init() {
   board = ["", "", "", "", "", "", "", "", ""];
-  turn = turn;
+  turn = "choose";
   win = null;
 
   render();
 }
  function xTurn(){
    init();
+   document.getElementById("turn").innerHTML = "Turn: X";
    turn = "X";
  }
  function oTurn(){
    init();
+   document.getElementById("turn").innerHTML = "Turn: O";
    turn = "O";
  }
 function render() {

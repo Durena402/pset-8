@@ -18,7 +18,7 @@ let turn;
 let win;
 let chosen;
 let xWins = 0;
-let yWins= 0;
+let oWins= 0;
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 
 const squares = Array.from(document.querySelectorAll("#board div"));
@@ -36,7 +36,7 @@ document.getElementById("o-first").onclick = oTurn;
 
 function init() {
   board = ["", "", "", "", "", "", "", "", ""];
-  turn = "choose";
+  turn = "X";
   win = null;
 
   render();
@@ -85,13 +85,16 @@ function getWinner() {
       board[condition[1]] === board[condition[2]]
     ) {
       winner = board[condition[0]];
+      if(winner === "X"){
+        xWins++;
+        document.getElementById("xScore").innerHTML = xWins;
+      }
+      if(winner === "O"){
+        oWins++;
+        document.getElementById("oScore").innerHTML = oWins;
+      }
     }
   });
 
   return winner ? winner : board.includes("") ? null : "T";
-  if winner === "X" {
-    xWin++;
-  } if else (winnner === "Y"){
-    yWin++;
-  }
 }

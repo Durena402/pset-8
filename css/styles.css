@@ -76,6 +76,7 @@ h2 {
   margin-top: 1%;
   margin bottom: 10%;
   background-color: pink;
+  border: 1px solid black;
 }
 #x-first:hover {
   background-color: #A4E8CD;
@@ -90,6 +91,7 @@ h2 {
   margin-top: 1%;
   margin bottom: 10%;
   background-color: pink;
+  border: 1px solid black;
 }
 #o-first:hover {
   background-color: #A4E8CD;

@@ -1,6 +1,7 @@
 body {
   text-align: center;
   font-family: "Roboto", monospace;
+  background-color: #E2DEEF;
 }
 
 h1 {
@@ -44,7 +45,7 @@ h2 {
 }
 
 .square:hover {
-  background-color: lightgray;
+  background-color: #A4E8CD;
   cursor: pointer;
 }
 
@@ -110,4 +111,8 @@ h2 {
 .oScore ,
 .xScore {
   border-bottom: 2px solid black;
+}
+#oScore ,
+#yScore {
+  color: #937B63;
 }

@@ -50,7 +50,7 @@ h2 {
 }
 
 #reset-button {
-  background-color: white;
+  background-color: pink;
   border: 1px solid black;
   color: black;
   font-size: 21px;
@@ -61,8 +61,8 @@ h2 {
 }
 
 #reset-button:hover {
-  background-color: black;
-  color: white;
+  background-color: #A4E8CD;
+  color: black;
   cursor: pointer;
 }
 #choosing-first-title {
